@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;  
+            background: linear-gradient(120deg, #bd0d0d, #66a6ff, #d10a0a9b);
+            
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+            max-width: 400px;
+            width: 100%;
+        }
+        .form-title {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .container div {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 14px;
+            outline: none;
+        }
+        input[type="submit"] {
+            background: #66a6ff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            transition: background 0.4s ease;
+        }
+        input[type="submit"]:hover {
+            background: #0056b3;
+        }
+        input:hover{
+            background-color:rgba(0, 0, 0, 0.3);
+        }
+        .account-text {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 13px;
+            color: #100101;
+        }
+        .account-text a {
+           color: rgb(63, 51, 243);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .account-text a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="container">
+            <div class="form-title">Login</div>
+            <div>
+                <label for="username">Username or Email</label>
+                <input type="text" id="username" placeholder="Enter your username or email" required>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <div>
+                <input type="submit" value="Login">
+            </div>
+            <div class="account-text">
+               To New account? <a href="sign.html">Sign up</a>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
